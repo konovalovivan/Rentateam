@@ -10,6 +10,8 @@ class FeedModel {
         self.storage = storage
     }
     
+    private var internetAvailable: Bool = true
+    
     func updater(url: String? = nil) {
         let indicator = UIActivityIndicatorView(style: .gray)
         indicator.startAnimating()
@@ -49,19 +51,17 @@ class FeedModel {
             do {
                 guard let data = try $0.get() else { fatalError("data nil") }
                 storage?.dataStorage.append(data)
+                internetAvailable = true
                 worker(with: data)
             } catch {
                 print("🛑 CONNECTION FAILED!!!", error.localizedDescription)
-                
+                guard internetAvailable else { return }
                 // MARK: Retrieving stored data from UserDefaults
                 // Everything works perfectly!
                 guard let key = storage?.dataBackupKey,
                       let datas: [Data] = storage?.dataBackup[key] else { return }
-                for data in datas {
-                    DispatchQueue.global(qos: .background).async {
-                        worker(with: data)
-                    }
-                }
+                datas.forEach({ worker(with: $0) })
+                internetAvailable = false
             }
         })
     }
