@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28S-u3-mSX">
+                                <rect key="frame" x="144" y="262" width="126" height="41.5"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vus-yd-NfQ">
+                                <rect key="frame" x="103.5" y="172" width="207" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vus-yd-NfQ" secondAttribute="height" multiplier="1:1" id="anQ-pR-0yb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renta Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4q-LL-XI6">
+                                <rect key="frame" x="127.5" y="435" width="159" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASAHI OCEAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieD-cX-D5S">
+                                <rect key="frame" x="152" y="821" width="110.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загружаюсь..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZl-hi-AGd">
+                                <rect key="frame" x="128" y="525.5" width="158" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vus-yd-NfQ" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="05o-dG-869"/>
+                            <constraint firstItem="ieD-cX-D5S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0gS-nh-a23"/>
+                            <constraint firstItem="28S-u3-mSX" firstAttribute="top" secondItem="vus-yd-NfQ" secondAttribute="top" constant="90" id="3uX-YJ-VHU"/>
+                            <constraint firstItem="pZl-hi-AGd" firstAttribute="top" secondItem="F4q-LL-XI6" secondAttribute="bottom" constant="54.5" id="67j-xh-P9u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ieD-cX-D5S" secondAttribute="bottom" constant="20" id="6nI-bC-Ake"/>
+                            <constraint firstItem="F4q-LL-XI6" firstAttribute="centerX" secondItem="vus-yd-NfQ" secondAttribute="centerX" id="6ql-Ix-Qd0"/>
+                            <constraint firstItem="vus-yd-NfQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="128" id="AUr-Ce-zbH"/>
+                            <constraint firstItem="F4q-LL-XI6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Emu-1v-gxb"/>
+                            <constraint firstItem="pZl-hi-AGd" firstAttribute="centerX" secondItem="F4q-LL-XI6" secondAttribute="centerX" id="JJd-n0-oFi"/>
+                            <constraint firstItem="28S-u3-mSX" firstAttribute="centerX" secondItem="vus-yd-NfQ" secondAttribute="centerX" id="JhU-PJ-jNf"/>
+                            <constraint firstItem="28S-u3-mSX" firstAttribute="height" secondItem="vus-yd-NfQ" secondAttribute="height" multiplier="0.2" id="OGl-m0-JXc"/>
+                            <constraint firstItem="vus-yd-NfQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="can-fv-lZ0"/>
+                            <constraint firstItem="28S-u3-mSX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="rV3-KH-eJj"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
