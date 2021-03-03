@@ -12,7 +12,7 @@ class PostViewController: UIViewController {
     
     func config(post: FeedElement) {
         
-        let imd = Storage.shared.images[post.id] // image data
+        let imd: Data? = Storage.shared.images[post.id] // image data
         imageView.image = imd != nil ? UIImage(data: imd!) : UIImage(named: "brokenImage")
         view.bgBlurImage(with: imageView.image, bv: bgBlurPhoto) // Create a blur effect under the photo
         

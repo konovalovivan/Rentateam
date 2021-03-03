@@ -19,7 +19,7 @@ class API: GETPOST {
             let config: URLSessionConfiguration = .ephemeral
             config.multipathServiceType = .aggregate
             config.networkServiceType = .default
-            config.waitsForConnectivity = true
+            config.waitsForConnectivity = false // Force don't wait for network recovery
             return .init(configuration: config)
         }()
         

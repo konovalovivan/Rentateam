@@ -21,8 +21,11 @@ class FeedViewController: UIViewController, PresentDelegate {
         super.viewDidLoad()
         feedView = .init(frame: view.frame)
         feedView.model = .init(feedView, .shared)
-        feedView.model?.updater(url: Host.photos.random[20])
+        
+        let url: String = Host.photos.random[20]
+        feedView.model?.updater(url: url)
         feedView.presentDelegate = self
+        
         view.addSubview(feedView)
     }
 }

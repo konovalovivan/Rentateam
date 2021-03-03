@@ -79,9 +79,9 @@
 		3DE08F9D25EAF3430018CDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE08F9B25EAF3430018CDFF /* LaunchScreen.storyboard */; };
 		3DE08FA825EAF3430018CDFF /* RentateamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FA725EAF3430018CDFF /* RentateamTests.swift */; };
 		3DE08FB325EAF3430018CDFF /* RentateamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FB225EAF3430018CDFF /* RentateamUITests.swift */; };
-		3DE1E42025EDC7340020A3A1 /* ImageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1E41F25EDC7340020A3A1 /* ImageDataManager.swift */; };
-		3DE1E42125EDC7340020A3A1 /* ImageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1E41F25EDC7340020A3A1 /* ImageDataManager.swift */; };
-		3DE1E42225EDC7340020A3A1 /* ImageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1E41F25EDC7340020A3A1 /* ImageDataManager.swift */; };
+		3DE1E42025EDC7340020A3A1 /* BackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1E41F25EDC7340020A3A1 /* BackupManager.swift */; };
+		3DE1E42125EDC7340020A3A1 /* BackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1E41F25EDC7340020A3A1 /* BackupManager.swift */; };
+		3DE1E42225EDC7340020A3A1 /* BackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1E41F25EDC7340020A3A1 /* BackupManager.swift */; };
 		3DEDE70225EE817D00345744 /* bgBlurImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEDE70125EE817D00345744 /* bgBlurImage.swift */; };
 		3DEDE70325EE817D00345744 /* bgBlurImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEDE70125EE817D00345744 /* bgBlurImage.swift */; };
 		3DEDE70425EE817D00345744 /* bgBlurImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEDE70125EE817D00345744 /* bgBlurImage.swift */; };
@@ -148,7 +148,7 @@
 		3DE08FAE25EAF3430018CDFF /* RentateamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentateamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE08FB225EAF3430018CDFF /* RentateamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentateamUITests.swift; sourceTree = "<group>"; };
 		3DE08FB425EAF3430018CDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DE1E41F25EDC7340020A3A1 /* ImageDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataManager.swift; sourceTree = "<group>"; };
+		3DE1E41F25EDC7340020A3A1 /* BackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManager.swift; sourceTree = "<group>"; };
 		3DEDE70125EE817D00345744 /* bgBlurImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bgBlurImage.swift; sourceTree = "<group>"; };
 		3DEDE73D25EE8A6700345744 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		3DEDE73E25EE8A6700345744 /* PostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 			children = (
 				3D9A948B25EBDF6E00A2671A /* Storage.swift */,
 				3D9A949525EBDF8500A2671A /* FeedStorage.swift */,
-				3DE1E41F25EDC7340020A3A1 /* ImageDataManager.swift */,
+				3DE1E41F25EDC7340020A3A1 /* BackupManager.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -529,7 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9A952E25EC098100A2671A /* Position.swift in Sources */,
-				3DE1E42025EDC7340020A3A1 /* ImageDataManager.swift in Sources */,
+				3DE1E42025EDC7340020A3A1 /* BackupManager.swift in Sources */,
 				3DEDE75C25EE8EA900345744 /* UIViewController.swift in Sources */,
 				3D9A949625EBDF8500A2671A /* FeedStorage.swift in Sources */,
 				3D9A944525EBCB7500A2671A /* UIView.swift in Sources */,
@@ -585,7 +585,7 @@
 				3DEDE75D25EE8EA900345744 /* UIViewController.swift in Sources */,
 				3D9A926025EB089500A2671A /* UIColor.swift in Sources */,
 				3D9A92E225EB1F4200A2671A /* FeedViewController.swift in Sources */,
-				3DE1E42125EDC7340020A3A1 /* ImageDataManager.swift in Sources */,
+				3DE1E42125EDC7340020A3A1 /* BackupManager.swift in Sources */,
 				3D9A948D25EBDF6E00A2671A /* Storage.swift in Sources */,
 				3D9A952C25EC098100A2671A /* Urls.swift in Sources */,
 			);
@@ -618,7 +618,7 @@
 				3DEDE75E25EE8EA900345744 /* UIViewController.swift in Sources */,
 				3D9A926125EB089500A2671A /* UIColor.swift in Sources */,
 				3D9A92E625EB1F4300A2671A /* FeedViewController.swift in Sources */,
-				3DE1E42225EDC7340020A3A1 /* ImageDataManager.swift in Sources */,
+				3DE1E42225EDC7340020A3A1 /* BackupManager.swift in Sources */,
 				3D9A948E25EBDF6E00A2671A /* Storage.swift in Sources */,
 				3D9A952D25EC098100A2671A /* Urls.swift in Sources */,
 			);
@@ -775,7 +775,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = KXDT64LHVB;
 				INFOPLIST_FILE = "Rentateam/Root Files/Info.plist";
@@ -797,7 +797,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = KXDT64LHVB;
 				INFOPLIST_FILE = "Rentateam/Root Files/Info.plist";
