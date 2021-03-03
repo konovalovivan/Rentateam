@@ -1,5 +1,4 @@
 # Rentateam
-Тестовое приложение Rentateam | Rentateam test app
 ![](https://media.giphy.com/media/o4R2Cmmv8w7MLgn0E7/giphy.gif)
 
 ### ТЗ:
